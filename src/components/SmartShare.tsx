@@ -1,10 +1,11 @@
 import { useState } from 'react';
-import { useTranslation } from 'react-i18next'; // ✅ أضف هذا
+import { useTranslation } from 'react-i18next';
 import './SmartShare.css';
+import { Share2, MessageCircleMore } from 'lucide-react';
 
 function SmartShare() {
   const [copied, setCopied] = useState(false);
-  const { t } = useTranslation(); // ✅ هذا السطر ضروري
+  const { t } = useTranslation();
   const shareUrl = window.location.href;
 
   const handleShare = async () => {
@@ -12,7 +13,7 @@ function SmartShare() {
       try {
         await navigator.share({
           title: 'Tamer Abu Sneineh - Digital Card',
-          text: t('whatsappMessage'), // ✅ ترجمة الرسالة
+          text: t('whatsappMessage'),
           url: shareUrl,
         });
       } catch (error) {
@@ -33,23 +34,24 @@ function SmartShare() {
 
   return (
     <div className="share-section">
-      <button onClick={handleShare} className="share-button">
-        📤 {t('shareCard')}
-      </button>
+      <div className="hero-buttons">
+        <button onClick={handleShare} className="share-button">
+          <Share2 size={18} style={{ marginRight: '6px' }} />
+          {t('shareCard')}
+        </button>
 
-      <a
-        href={whatsappUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="whatsapp-share-button"
-      >
-        🟢 WhatsApp
-      </a>
+        <a
+          href={whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="whatsapp-share-button"
+        >
+          <MessageCircleMore size={18} style={{ marginRight: '6px' }} />
+          WhatsApp
+        </a>
+      </div>
 
-      {copied && (
-  <p className="share-feedback">{t('copiedMessage')}</p>
-)}
-
+      {copied && <p className="share-feedback">{t('copiedMessage')}</p>}
     </div>
   );
 }
