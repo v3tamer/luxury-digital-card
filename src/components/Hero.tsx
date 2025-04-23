@@ -1,5 +1,5 @@
 import './Hero.css';
-import myAvatar from '../assets/tamer-avatar.jpg';
+import myAvatar from '../assets/avatar-temp.jpg';
 import { Typewriter } from 'react-simple-typewriter';
 import ParticlesBackground from './ParticlesBackground';
 import { useTranslation } from 'react-i18next';
