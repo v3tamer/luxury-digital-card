@@ -1,0 +1,94 @@
+/* Footer Styling */
+.footer {
+    background-color: #0a0a0a;
+    color: #ccc;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.95rem;
+    font-family: 'Outfit', sans-serif;
+    border-top: 1px solid #1f1f1f;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .floating-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #00ffe0;
+    color: #000;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Outfit', sans-serif;
+    box-shadow: 0 0 15px rgba(0, 255, 224, 0.4);
+    transition: background 0.3s ease, transform 0.2s ease;
+    z-index: 1000;
+  }
+  
+  .floating-button:hover {
+    background-color: #00ccbb;
+    transform: translateY(-3px);
+  }
+  
+  @media (max-width: 768px) {
+    .floating-button {
+      padding: 10px 16px;
+      font-size: 0.9rem;
+      bottom: 20px;
+      right: 20px;
+    }
+  }
+  .download-pdf-button {
+    margin-top: 1.2rem;
+    background-color: transparent;
+    border: 2px solid #00ffe0;
+    color: #00ffe0;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-family: 'Outfit', sans-serif;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .download-pdf-button:hover {
+    background-color: #00ffe0;
+    color: #000;
+  }
+  .theme-toggle-button {
+    margin-top: 1rem;
+    background-color: transparent;
+    border: 2px solid #00ffe0;
+    color: #00ffe0;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .theme-toggle-button:hover {
+    background-color: #00ffe0;
+    color: #000;
+  }
+  .lang-toggle-button {
+    margin-top: 1rem;
+    background-color: transparent;
+    border: 2px solid #00ffe0;
+    color: #00ffe0;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-family: 'Outfit', sans-serif;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .lang-toggle-button:hover {
+    background-color: #00ffe0;
+    color: #000;
+  }
+  
+  

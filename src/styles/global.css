@@ -1,0 +1,78 @@
+/* Reset أساسي */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* إعدادات عامة للصفحة */
+  body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #0a0a0a;
+    color: white;
+    line-height: 1.6;
+  }
+  
+  /* الوضع الليلي */
+  body[data-theme='dark'] {
+    background-color: #0a0a0a;
+    color: #e0e0e0;
+  }
+  
+  body[data-theme='dark'] .hero,
+  body[data-theme='dark'] .about-section,
+  body[data-theme='dark'] .skills-section,
+  body[data-theme='dark'] .footer {
+    background-color: #0a0a0a;
+    color: #e0e0e0;
+  }
+  
+  /* الوضع النهاري */
+  body[data-theme='light'] {
+    background-color: #ffffff;
+    color: #111111;
+  }
+  
+  body[data-theme='light'] .hero,
+  body[data-theme='light'] .about-section,
+  body[data-theme='light'] .skills-section,
+  body[data-theme='light'] .footer {
+    background-color: #ffffff;
+    color: #111111;
+  }
+  
+  /* تحسين شكل الروابط والأزرار العامة */
+  body[data-theme='light'] a,
+  body[data-theme='light'] button {
+    color: #111;
+  }
+  
+  body[data-theme='dark'] a,
+  body[data-theme='dark'] button {
+    color: #00ffe0;
+  }
+  
+  /* تصحيح لون أزرار التواصل داخل hero فقط */
+  body[data-theme='light'] .hero-buttons a {
+    color: #00ffe0;
+    border-color: #00ffe0;
+  }
+  
+  body[data-theme='light'] .hero-buttons a:hover {
+    background-color: #00ffe0;
+    color: #000;
+  }
+  
+  /* تحسين زر المشاركة وطلب البطاقة في الوضع الليلي */
+body[data-theme='dark'] .share-button,
+body[data-theme='dark'] .floating-button {
+  color: #00ffe0;
+  border: 2px solid #00ffe0;
+  background-color: transparent;
+}
+
+body[data-theme='dark'] .share-button:hover,
+body[data-theme='dark'] .floating-button:hover {
+  background-color: #00ffe0;
+  color: #000;
+}

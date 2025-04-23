@@ -1,0 +1,36 @@
+.qr-section {
+    background-color: #0f0f0f;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #e0e0e0;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .qr-container {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .qr-title {
+    font-size: 1.8rem;
+    color: #00ffe0;
+    margin-bottom: 1rem;
+  }
+  
+  .qr-code-wrapper {
+    display: inline-block;
+    padding: 1rem;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 0 20px #00ffe088;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .qr-caption {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #bbb;
+  }
+  
