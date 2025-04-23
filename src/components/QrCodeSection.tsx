@@ -3,7 +3,7 @@ import './QrCodeSection.css';
 import SmartShare from './SmartShare';
 
 function QrCodeSection() {
-  const cardUrl = 'https://your-digital-card-link.com';
+  const cardUrl = 'https://https://tamer-digital-card.netlify.app/';
 
   return (
     <section className="qr-section">
