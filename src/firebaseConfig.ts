@@ -1,16 +1,15 @@
-// src/firebaseConfig.ts
-import { initializeApp } from "firebase/app";
+import { initializeApp } from 'firebase/app';
+import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBpwhiSDunFI2WTcNO83uXwVsGuE7O5E94",
-  authDomain: "luxury-digital-card.firebaseapp.com",
-  projectId: "luxury-digital-card",
-  storageBucket: "luxury-digital-card.firebasestorage.app",
-  messagingSenderId: "1061283913420",
-  appId: "1:1061283913420:web:a471916795a10897f56c69",
-  measurementId: "G-B8NCDE9P41" // (إن وُجد)
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);
-
-export default app;
+export const db = getFirestore(app);
